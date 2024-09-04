@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div id="container">
+        <section class="calculate">
+          <label class="column">
+            <span class="main-label">Bill</span>
+            <input type="number" class="main-input" id="billAmount" placeholder="0" />
+          </label>
+          <div>
+            <span class="main-label">Select Tip %</span>
+            <div class="prasent">
+              <label class="label">
+                <input type="radio" value="5" name="tip" />
+                <span class="prast">5%</span>
+              </label>
+              <label class="label">
+                <input type="radio" value="10" name="tip" />
+                <span class="prast">10%</span>
+              </label>
+              <label class="label">
+                <input type="radio" value="15" name="tip" />
+                <span class="prast">15%</span>
+              </label>
+              <label class="label">
+                <input type="radio" value="25" name="tip" />
+                <span class="prast">25%</span>
+              </label>
+              <label class="label">
+                <input type="radio" value="50" name="tip" />
+                <span class="prast">50%</span>
+              </label>
+              <label>
+                <input type="number" class="prast" id="customTip" placeholder="custom" />
+              </label>
+            </div>
+          </div>
+          <label class="column">
+            <span class="main-label">Number of People</span>
+            <input type="number" class="main-input" id="numPeople" placeholder="0" />
+          </label>
+        </section>
+      </div>
+      <section class="result">
+        <div class="flex tipAmout">
+          <div>
+            <h2>Tip Amount</h2>
+            <span class="spancha">/ person</span>
+          </div>
+          <h1  style="color: #26C2AE; font-size: 30px;" class="amount" id="tipAmount">0.00</h1>
+        </div>
+        <div class="flex total">
+          <div>
+            <h2>Total</h2>
+            <span class="spancha">/ person</span>
+          </div>
+          <h1 style="color: #26C2AE; font-size: 30px;" class="amount" id="totalAmount">0.00</h1>
+        </div>
+        <button id="resetButton">Reset</button>
+      </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
